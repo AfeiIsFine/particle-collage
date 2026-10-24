@@ -1,0 +1,27 @@
+# ---- 操作系统噪音 ----
+.DS_Store
+
+# ---- 构建产物 ----
+# 单文件分享版通过 GitHub Release 分发，不放进 git 历史
+dist/
+particle-collage-*.zip
+.build_entry.js
+.build_bundle.js
+
+# ---- 本地备份副本 ----
+*.auto-backup-*
+
+# ---- 开发守卫（只在本机开发目录，不属于公开最小可运行集）----
+.test/
+
+# ---- 原始素材库（缩略图已内嵌在 materials-manifest.js）----
+测试图/
+
+# ---- 依赖 ----
+node_modules/
+
+# ---- 日志 ----
+*.log
+
+# ---- 只用于生成 README 图的 1600px 原图 ----
+screenshot-full.png
