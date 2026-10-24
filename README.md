@@ -1,12 +1,20 @@
-# 图片粒子拼贴效果 2.0 / Particle Collage 2.0
+# 图片粒子拼贴效果 · Image → Particle Collage
+
+**中文** | [English](README.en.md)
 
 把一张主图变成由成千上万张小照片组成的粒子拼贴：每颗粒子换成一张素材图，主图的明暗决定每张方块的亮度；镜头可以从照片云里飞入、拼成完整图像；支持 4K、竖屏、透明 PNG 的逐帧导出。
 
-![图片粒子拼贴效果 2.0 默认场景](screenshot.png)
-
 **在线演示**：<https://afeiisfine.github.io/particle-collage/>  
-**离线单文件版**：[Releases · v2.0.0](https://github.com/AfeiIsFine/particle-collage/releases/tag/v2.0.0)  
-（下载 `particle-collage-2.0-share.zip`，解压后双击 `index.html`，不需要本地服务）
+**离线单文件版**：[Releases](https://github.com/AfeiIsFine/particle-collage/releases/latest)  
+（下载 zip，解压后双击 `index.html`，不需要本地服务）
+
+![图片粒子拼贴效果 默认场景](screenshot.png)
+
+> **关于作者**：**阿飞这个名字挺好的**（[AfeiIsFine](https://github.com/AfeiIsFine)）。
+> 本项目作者完全不懂开发，所有代码、功能都是 AI 写的，包括这份说明文档。
+> 如果有低级错误，请见谅 —— 也欢迎直接提 Issue 指出。
+
+---
 
 ## 这是什么
 
@@ -16,7 +24,7 @@
 - **镜头动画**：从“置身照片云”的近距离起手，镜头边后退、方块边飞向各自位置，最后拼成完整图像。
 - **导出**：06 导出整段飞入拼合；07 导出当前画面序列或单帧；帧写入选定文件夹下的独立子文件夹，方便剪辑软件按序列导入。
 
-## 2.0 的关键改动
+## 主要改动
 
 - **素材纹理数组 + 每层 mipmap**：不再把素材拼进一张图集，远离时不会闪烁/摩尔纹，近处每张独立；默认 243 张素材仍是 16MB 级别。
 - **Composer 4× MSAA**：方块几何边缘更干净。
@@ -83,7 +91,7 @@ python3 -m http.server 8125 --bind 127.0.0.1
 
 # 生成单文件分享版（需要 Node/npx + esbuild）
 python3 build_share.py
-# → dist/index.html + particle-collage-2.0-share.zip
+# → dist/index.html + 单文件分享 zip（git 忽略，走 Release）
 ```
 
 源文件：
@@ -103,12 +111,6 @@ python3 build_share.py
 - **默认演示图片**（`main.jpg` 与 `materials-manifest.js` 内嵌的 243 张缩略图）：© 2026 AfeiIsFine（阿飞这个名字挺好的），仅随本仓库作为演示提供，**不包含在 MIT 许可证内**；如需复用这些图片，请先联系作者。使用代码时请把默认图片替换成你自己的素材。
 - **three.js r160**：MIT，版权归 three.js 作者；见 `libs/three.module.js` 文件头与 <https://threejs.org>。
 - `test.jpg` / `test-assets/` 是开发自测图案，可随代码一起用于测试。
-
-## Credits
-
-- Built by [AfeiIsFine（阿飞这个名字挺好的）](https://github.com/AfeiIsFine)
-- three.js r160
-- 设计/交互：工具类 UI 风格（单色阶、细线分层、右对齐读数）
 
 ## 相关项目
 
