@@ -19,8 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-Note: the MIT license above covers the code in this repository. The default
-demo images (main.jpg and the 243 thumbnails embedded in materials-manifest.js)
-are copyright (c) 2026 AfeiIsFine and are included for demonstration only; they
-are not licensed under the MIT terms. See README.md.
